@@ -1,0 +1,49 @@
+Group Member Names & X500's:
+    - Cameron Estes: estes091
+
+Contributions of each partner:
+    - Cameron Estes did 100% of all the work on this project
+
+How to compile and run my program:
+    - To begin, open the project zip folder sent within IntelliJ to ensure no IDE issues when running
+    - Then run the whole program from within the game class
+    - The game class will create a chess board and run a while loop until the game ends
+    - Be aware that if using the "Darcula" color scheme in IntelliJ, the pieces will appear to invert themselves, either be aware that a black piece is actually white, or change to light mode
+    - Making a move within the game:
+        * The first two int inputs represent the starting row and col, and the second two represent the target row and column
+        * Please be aware that the move should be in this format (num num num num): 4 integers delimited by a single whitespace
+        * Any more than one whitespace will cause the scanner to misread the values inputted
+        * If a number outside the range is inputted, the game will catch that and allow the user to remake their move
+    - Promoting pawn
+        * When promoting one's pawn, the values q,k,b,r can be inputted
+        * DO NOT capitalize these inputs as it will read them as incorrect values
+        * One does not have the choice to make a move other than promoting
+    - Once the opposing king is fully captured, not put in checkmate, the game will end
+    - Each turn, an print statement will inform players of who's turn it is
+
+Assumptions:
+    - I am also assuming that when inputting values to make moves, one will NOT put more than one whitespace in between each value
+    - Castling, En Passant, and Check/Checkmate are also assumed to be not included in this game
+
+Additional features:
+    - promotePiece: Created a promotePiece function in the piece class that takes in a String value representing the desired promotion, and re-creates the current piece
+      to the piece of the specified type
+    - verifyKnightMove: checks to see if a given knight move is legal using Math functions
+
+Known bugs / defects:
+    - Do not type too large of an int for testing because it will cause an error to come up.  The verifySourceAndDestination will catch large ints as out of bounds,
+      but if they are too large it will throw and error
+    - Do not type more than 1 whitespace between specified ints when making a move
+    - The black pawns will be larger than usual since they a rendered as emojis
+
+Outside Sources:
+    - None
+
+Statement of Truth:
+    - “I certify that the information contained in this README
+      file is complete and accurate. I have both read and followed the course policies
+      in the ‘Academic Integrity - Course Policy’ section of the course syllabus.”
+        - Cameron Estes
+
+
+
